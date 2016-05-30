@@ -1,0 +1,157 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body, #wrapper {
+	min-height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+	padding: 0 25px;
+    /*border-right: 2px solid darkred;
+    border-left: 2px solid darkred;*/
+}
+
+.clearfix:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background: black;
+}
+
+.logo {
+    line-height: 50px;
+    font-size: 27px;
+    color: white;
+}
+
+.main {
+    min-height: 100vh;
+	background: aliceblue;
+}
+
+.main .container {
+    padding-top: 75px;
+}
+
+.left-sidebar {
+	float: left;
+	width: 750px;
+}
+
+.right-sidebar {
+	float: right;
+	width: 250px;
+}
+
+.right-sidebar form {
+	padding: 25px;
+	border: 2px solid burlywood;    
+    border-radius: 10px;
+	position: fixed;
+    width: 196px;
+}
+
+.right-sidebar form p {
+	text-align: center;
+}
+
+.right-sidebar form input,
+.right-sidebar form textarea,
+.right-sidebar form p  {
+    margin-bottom: 10px;
+}
+
+.right-sidebar form input,
+.right-sidebar form textarea {
+    padding:0 5px;
+    width: 184px;
+}
+
+.right-sidebar form input {
+    height: 30px;
+    padding:0 5px;
+}
+
+.right-sidebar form textarea {
+	padding: 5px;
+    height: 60px;
+}
+
+.right-sidebar input[type="submit"] {
+    height: 28px;
+    width: 100px;
+    float: right;
+}
+
+.right-sidebar .feedback .error {
+    clear: both;
+    font-size: 10px;
+    color: red;
+}
+
+.messages .message {
+    border: 2px solid cadetblue;
+    border-radius: 5px;
+	margin-bottom: 15px;
+	margin-right: 15px;
+	padding: 5px;
+}
+
+.messages .message:first-child {
+	margin-top: 0;
+}
+
+.messages .message .userinfo {
+	/*border-bottom: 1px solid chocolate;*/
+}
+
+.messages .message .delete {
+    display: block;
+    float: right;
+    height: 10px;
+    width: 7px;
+    padding-left: 3px;
+    border-radius: 6px;
+    background: red;
+    cursor: pointer;
+    font-size: 8px;
+    color: white;
+    font-family: monospace;
+    transition: all .15s ease-in-out;
+}
+
+.messages .message .delete:hover {
+    background: #B10D0D;
+}
+
+.messages .message span.author {
+	float: left;
+	font-size: 0.8em;
+    color: brown;
+}
+
+.messages .message span.mail {
+	float: right;
+	font-size: 0.6em;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+.messages .message p.text {
+	margin-top: 12px;
+}
